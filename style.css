@@ -6,8 +6,8 @@ section {
   padding-top: 5rem;
 }
 
-.navbar-custom {
-  background-color: #4f4f4f;
+.navbar {
+  background-color: transparent;
 }
 
 /*--------------------------------------------------------------
@@ -145,4 +145,19 @@ section {
 .navbar-brand span {
   font-size: 1.5rem;
   color: red;
+}
+
+.navbar-brand {
+  font-family: "Dela Gothic One", cursive;
+}
+
+nav .nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  background-color: #4f4f4f;
+  box-shadow: 5px -1px 12px -5px grey;
 }
