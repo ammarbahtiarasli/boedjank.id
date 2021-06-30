@@ -6,10 +6,6 @@ section {
   padding-top: 5rem;
 }
 
-.navbar {
-  background-color: transparent;
-}
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -34,6 +30,14 @@ section {
 @media only screen and (max-width: 600px) {
   #about {
     padding-top: 275px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    text-align: center;
+    background-color: #4f4f4f;
+    opacity: 0.8;
   }
 }
 
@@ -161,14 +165,19 @@ section {
   font-family: "Dela Gothic One", cursive;
 }
 
-nav .nav-fixed {
-  width: 100%;
-  position: fixed;
-  transition: 0.3s ease-in-out;
-}
+@media only screen and (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+  nav .nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+  }
 
-.nav-active {
-  background-color: #4f4f4f;
-  opacity: 0.9;
-  box-shadow: 5px -1px 12px -5px grey;
+  .nav-active {
+    background-color: #4f4f4f;
+    opacity: 0.8;
+    box-shadow: 5px -1px 12px -5px grey;
+  }
 }
